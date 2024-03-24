@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    height: 100vh; /* Set body height to viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: auto; /* Adjust width as needed */
+    max-width: 25%; /* Optional: set maximum width */
+    height: auto; /* Allow the container to adjust its height based on content */
+    text-align: center; /* Optional: center content inside container */
+    background-color: #f0f0f0; /* Optional: background color */
+    padding: 20px; /* Optional: add padding */
+    border-radius: 25px; /* Optional: add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add box shadow */
+   
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.qrcode {
+    
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-height: 35%;
+    margin-top: 1rem; /* Add some top margin to create space between the image and the text */
+    margin-bottom: 1rem;
+    
+}
+
+.wrapper h1 {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+.wrapper p {
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+  
+    .wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+  
+    .wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .wrapper p {
+        font-size: 1rem;
+    }
+}
